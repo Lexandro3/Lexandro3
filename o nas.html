@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  float: bottom;
+  justify-content: space-between;
+}
+
+.menu a {
+  background-color: blue;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 80%;
+  padding: 10px;
+}
+
+.right {
+  background-color: yellow;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin-top: 7px;
+  text-align: center;
+}
+/* tuna pisem ja, Pan Boh pomahaj */
+body{
+		background-image: url("images/pozadie dobrostav.png")
+	 }
+
+#farba{
+	padding-right: 1%; padding-left: 1%; margin: 1%;
+	border-style:inset; color: white;
+	background-color: darkblue;
+	color: white;
+	font-size: 150%;
+}
+
+.logo{
+   display: flex;
+   float: top;
+}
+
+.hore{
+   display: flex;
+   text-align: center;
+   float: center;
+   padding-left: 1%;
+   color: white;
+}
+
+table#tab{
+	text-align: center;
+	margin: 10px auto;
+
+}
+
+table,td,th{
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+
+td,th{
+	padding: 10px 30px;
+}
+
+tr#prvy{
+	background-color: darkred;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	background-color: transparent;
+	color: white;
+}
+
+a:active{
+	color: greenyellow;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right{
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:navajowhite;">
+
+
+<div class = "logo">	
+  	<a href="dobrovic.html" style="width: 5em"><img src="images/Dobrostav logo.png" alt="Dobrostav logo" style="margin: 0px; width: 100%;" !important></a>
+	<div>  
+  		<h1 style="margin-left: 12%;">Dobrostav</h1>
+	</div>
+</div>	
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="dobrovic.html">Domov</a>
+    <a href="galeria.html">Obrázková galéria</a>
+    <a href="o nas.html">O nás</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+<body>
+	<div id="farba"><h2>O našej firme</h2>
+	<p style="size: 150%;">Naša firma bola založená v roku 1998, v čase nových prichádzajúcich riešení plastových okien a dverí.<br>
+	Najväčší záujem o naše služby zaznamenala firma v roku 2006, kedy si v našej vtedajšej Košickej kancelárii dali zákazníci vypracovať až 1500 cenových ponúk, z ktorých bolo 500 zákazok. Odvtedy sa kapacitné možnosti našej firmy zhoršili, nie však na úkor kvality. Posledný rok naša firma vybavila 150 zákazok.<br>V súčasnosti naša firma disponuje malým tímom v zložení 1 účtovníka, a 2 montážnikov - majstra a pomocníka. </p></div>
+	
+	<div style="overflow-x:auto;">
+		<table id="tab">
+			<tr id="prvy">
+				<th colspan="2">Pracovník</th>
+				<th>Vek</th>
+				<th colspan="2">Pozícia a tel.č.</th>
+				
+			</tr>
+			<tr>
+				<td>Jozef</td>
+				<td>Dobrovič</td>
+				<td>49</td>
+				<td>majster</td>
+				<td>0905 254 906</td>
+			</tr>
+			<tr>
+				<td>Dávid</td>
+				<td>Mrúz</td>
+				<td>19</td>
+				<td>pomocník</td>
+				<td>0919 111 113</td>
+			</tr>
+			<tr>
+				<td>Filip</td>
+				<td>Kudlák</td>
+				<td>22</td>
+				<td>účtovník</td>
+				<td>0944 711 113</td>
+			</tr>
+	</div>
+	</table>
+</body>
+<div style=
+"background-color:black;
+text-align:center;
+padding:10px;
+margin-top:7px; 
+width: 100%;
+position: static;
+bottom: 0;
+left: 0;">
+Alexander Jozef Dobrovič, Všetky práva vyhradené 2023
+</div>
+</body>
+</html>

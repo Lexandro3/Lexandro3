@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  float: bottom;
+  justify-content: space-between;
+}
+
+.menu a {
+  background-color: blue;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 80%;
+  padding: 10px;
+}
+
+.right {
+  background-color: yellow;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin-top: 7px;
+  text-align: center;
+}
+/* tuna pisem ja, Pan Boh pomahaj */
+body{
+		background-image: url("images/pozadie dobrostav.png")
+	 }
+
+#farba{
+	padding-right: 1%; padding-left: 1%; margin: 1%;
+	border-style:inset; color: white;
+	background-color: darkblue;
+	color: white;
+	font-size: 150%;
+}
+
+.logo{
+   display: flex;
+   float: top;
+}
+
+.hore{
+   display: flex;
+   text-align: center;
+   float: center;
+   padding-left: 1%;
+   color: white;
+}
+div.obalovac{
+	width:22em;
+	margin: 15px auto;
+}
+
+div.formular{
+	display: inline-block;
+	width: 100%;
+	border: 5px groove; 
+	border-style: inset;
+	background-color: darkblue;
+	padding: 15px
+}
+
+div.formular{
+	margin: 1px;
+}
+
+button.odoslat{
+	margin: 10px;
+	position: right;
+}
+
+
+label{
+	display: block;
+	padding: 5px;
+}
+
+input{
+	width: 100%;
+	padding: 10px;
+}
+
+p.formular{
+	color: yellow;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	background-color: transparent;
+	color: white;
+}
+
+a:active{
+	color: greenyellow;
+}
+
+.dolu{
+	color: darkblue;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:navajowhite;">
+
+
+<div class = "logo">	
+  	<a href="dobrovic.html" style="width: 5em"><img src="images/Dobrostav logo.png" alt="Dobrostav logo" style="margin: 0px; width: 100%;" !important></a>
+	<div>  
+  		<h1 style="margin-left: 12%;">Dobrostav</h1>
+	</div>
+</div>	
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="dobrovic.html">Domov</a>
+    <a href="galeria.html">Obrázková galéria</a>
+    <a href="o nas.html">O nás</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+    <h2><address>Naše kontaktné údaje:<br>Email: dobrostav@hespa.sk Tel.č: 0905 254 906<br>Niekdajšia kancelária v Košickom <abbr title= "nákupnom centre"> "Jumbe" </abbr> je <b>zrušená!</b></address></h2>
+	<div class="obalovac">
+		<div class="riadok">
+			<div class="formular">
+				<h2>Vyplňte svoje údaje</h2>
+				<form>
+					<label for="meno">Meno a priezvisko*</label>
+					<input type="text" id="meno" name="meno" minlength="5" maxlength="128" required>
+
+					<label for="ulica">Adresa*</label>
+					<input type="text" id="ulica" name="ulica" maxlength="256" required>
+
+					<label for="telefon">Telefón</label>
+					<input type="tel" id="telefon" name="telefon" minlength="7">
+
+					<label for="predmet">predmet*</label>
+					<input type="predmet" id="predmet" name="predmet" minlength="3" maxlength="128" required>
+
+					<label for="sprava">Správa*</label>
+					<input type="tel" id="sprava" name="sprava" minlength="5">
+                    
+          <button type = "button" onclick="funkcia()"><p id = "java" style="text-align: center;">Odoslať</p></button>
+                    
+
+				</form>
+			</div>
+			
+		</div>
+
+		<div class="dolu">
+			Po vyplnení formulára dostanete od nás email, v ktorom sa Vás opýtame detaily o zákazke.<br>Predpokladanú cenu následne dostanete kvôli špecifikám (každá zákazka je iná) až v našej cenovej ponuke šitej na mieru pre zákazku. 
+		</div>
+		
+	</div>
+<div style=
+"background-color:black;
+text-align:center;
+padding:10px;
+margin-top:7px; 
+width: 100%;
+position: static;
+bottom: 0;
+left: 0;">
+Alexander Jozef Dobrovič, Všetky práva vyhradené 2023
+</div>
+<script type="text/javascript">
+function funkcia(){
+window.alert("Odoslané!")
+}
+</script>
+</body>
+</html>
